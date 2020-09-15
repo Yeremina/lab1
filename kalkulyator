@@ -1,0 +1,23 @@
+a = {5, 11, 12, 13}
+
+b = {12, 13, 15, 25}
+
+obedinenie = a.union(b)
+
+print( "Объединение: ", obedinenie)
+
+peresechenie = a.intersection(b)
+
+print( "Пересечение: ", peresechenie)
+
+raznost1 = a.difference(b)
+
+print( "Разность_1: ", raznost1)
+
+raznost2 = b.difference(a)
+
+print( "Разность_2: ", raznost2)
+
+symrazn = a.symmetric_difference(b)
+
+print ( "Симметрическая разность: ", symrazn)
