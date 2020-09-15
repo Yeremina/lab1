@@ -1,23 +1,27 @@
-a = {5, 11, 12, 13}
-
-b = {12, 13, 15, 25}
+print(' множество A:');
+a = set(input());
+print('множество B:');
+b = set (input());
+print(' множество A:', a);
+print(' множество B:', b);
 
 obedinenie = a.union(b)
-
-print( "Объединение: ", obedinenie)
-
 peresechenie = a.intersection(b)
-
-print( "Пересечение: ", peresechenie)
-
-raznost1 = a.difference(b)
-
-print( "Разность_1: ", raznost1)
-
-raznost2 = b.difference(a)
-
-print( "Разность_2: ", raznost2)
-
+raznost = a.difference(b)
 symrazn = a.symmetric_difference(b)
 
-print ( "Симметрическая разность: ", symrazn)
+
+s=0;
+
+print('выберите номер операции 1 (U) 2(^) 3(\) 4(+) 5 (EXIT)')
+
+while s<5:
+    s = int(input())
+    if s==1:
+        print( "Объединение: ", obedinenie)
+    if s==2:
+        print('Пересечение',peresechenie)
+    if s==3:
+        print('Разность',raznost)
+    if s==4:
+        print('Симметрическая разность',symrazn)
